@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DetectObject</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="message_need_permission">message_need_permission</string>
+    <string name="message_permission">message_permission</string>
+    <string name="title_go_to_setting">title_go_to_setting</string>
+</resources>

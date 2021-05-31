@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/img_view_item"
+        android:src="@drawable/camera_icon"
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+    </ImageView>
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/tv_english_item"
+            android:textSize="26sp"
+            android:text="Car"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/tv_mean_item"
+            android:layout_marginTop="5dp"
+            android:textSize="26sp"
+            android:text="O to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>
