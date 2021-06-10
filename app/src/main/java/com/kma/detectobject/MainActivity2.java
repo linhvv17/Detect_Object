@@ -89,7 +89,7 @@ public class MainActivity2 extends AppCompatActivity {
                 .map(jsonString -> {
                     String json = jsonString.substring(15, jsonString.length() - 1);
                     FlickrModel flickrModel = new Gson().fromJson(json, FlickrModel.class);
-                    return flickrModel.itemFlicks;
+                    return flickrModel.getItems();
                 })
                 .subscribe(items -> {
                     FastItemAdapter<ItemFlick> fastAdapter = new FastItemAdapter<>();
@@ -102,7 +102,7 @@ public class MainActivity2 extends AppCompatActivity {
                             npe.printStackTrace();
                         }
                         fullScreenImg.setVisibility(View.VISIBLE);
-                        String url = item.media.m.replace("_m.jpg", "_b.jpg");
+                        String url = item.getMedia().getM().replace("_m.jpg", "_b.jpg");
                         Picasso.get().load(url).into(fullScreenImg);
                         System.out.println("image " + url);
                         return false;
