@@ -65,9 +65,9 @@ public class GalleryFragment extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_gallery, container, false);
         recyclerView = view.findViewById(R.id.rc_gallery);
         databaseHandler = new DatabaseHandler(getContext());
-        databaseHandler.deleteAllItems();
+//        databaseHandler.deleteAllItems();
 
-        addResultToDatabase(pathFolderApp);
+//        addResultToDatabase(pathFolderApp);
 
 
         return view;

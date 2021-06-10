@@ -199,7 +199,7 @@ public class DetectFragment extends Fragment implements View.OnClickListener {
 //                        ClipData clipData = data.getClipData();
 //                        for (int i = 0; i < clipData.getItemCount(); i++) {
 //
-//                            ClipData.Item item = clipData.getItemAt(i);
+//                            ClipData.ItemFlick item = clipData.getItemAt(i);
 //                            Uri uri = item.getUri();
 //
 //                            currentImagePath = getPath(getContext(), uri);

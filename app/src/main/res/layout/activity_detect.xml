@@ -12,7 +12,7 @@
         android:scaleType="fitCenter"
         android:id="@+id/image_view_detect"
         android:layout_width="match_parent"
-        android:layout_height="400dp">
+        android:layout_height="150dp">
 
     </ImageView>
     <LinearLayout
@@ -31,6 +31,7 @@
         <LinearLayout
             android:layout_marginLeft="10dp"
             android:orientation="vertical"
+            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
@@ -53,31 +54,70 @@
             </TextView>
 
         </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_marginTop="30dp"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/btn_save_result"
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_gravity="center"
-            android:background="@drawable/ic_baseline_save_24"
-            android:layout_width="50dp"
-            android:layout_height="50dp">
-        </Button>
-        <TextView
-            android:layout_gravity="center"
-            android:text="Save"
-            android:textSize="28sp"
-            android:textColor="#000000"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_save_result"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_baseline_save_24"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+            </Button>
+            <TextView
+                android:layout_gravity="center"
+                android:text="Save"
+                android:textSize="28sp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-        </TextView>
+            </TextView>
 
+        </LinearLayout>
     </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/contents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:hint="Type image keyword..."
+            android:id="@+id/keyword"
+            android:imeOptions="actionDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+        <ProgressBar
+
+            android:id="@+id/progressBar"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <com.kma.detectobject.search_more.ZoomableImageView
+        android:id="@+id/fullScreenImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C9000000"
+        android:onClick="hideFullScreenImg"
+        android:scaleType="fitCenter"
+        />
 
 
 

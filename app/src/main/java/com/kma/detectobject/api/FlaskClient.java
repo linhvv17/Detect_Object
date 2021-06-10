@@ -18,10 +18,10 @@ public interface FlaskClient {
     Call<UploadResult> uploadMultipleFiles(
             @PartMap Map<String, RequestBody> files);
 
-    //upload image
+    //upload image & detect
     @Multipart
     @POST("/upload")
-    Call<DetectResult> uploadDetectMultipleFiles(
+    Call<DetectResult> uploadDetectFiles(
             @PartMap Map<String, RequestBody> files);
 
 

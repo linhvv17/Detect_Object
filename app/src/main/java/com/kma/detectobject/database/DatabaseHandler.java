@@ -39,7 +39,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     public void addItem(Item item) {
         SQLiteDatabase db = this.getWritableDatabase();
-
         ContentValues values = new ContentValues();
         values.put(KEY_NAME, item.getName());
         values.put(KEY_MEAN, item.getMean());
